@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="R.V Restaurant - Premium fine dining experience with exquisite flavors and unforgettable culinary artistry">
+    <meta name="keywords" content="fine dining, gourmet restaurant, luxury dining, R.V Restaurant">
+    <meta name="author" content="Ravi Vishnoi">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="R.V Restaurant | Exquisite Fine Dining">
+    <meta property="og:description" content="Where culinary artistry meets timeless elegance">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>R.V Restaurant | Exquisite Fine Dining Experience</title>
+</head>
+
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-video">
+            <video autoplay muted loop playsinline poster="img/video-poster.jpg">
+                <source src="video/restauran.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="R.V Restaurant Logo" class="logo-white">
+                    <img src="img/logo-black.png" alt="R.V Restaurant Logo" class="logo-dark">
+                </a>
+
+                <div class="navbar-links">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#menu" class="nav-link">Our Menu</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link">Dining Experience</a></li>
+                        <li class="nav-item"><a href="#locations" class="nav-link">Our Locations</a></li>
+                        <li class="nav-item"><a href="#reservations" class="nav-link">Reservations</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+
+                    <div class="nav-cta">
+                        <a href="#reservations" class="btn btn-primary">Book a Table</a>
+                    </div>
+                </div>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="hero-title">Exquisite flavors.<br>Unforgettable dining.</h1>
+                <p class="hero-subtitle">Where culinary artistry meets timeless elegance</p>
+                <div class="hero-buttons">
+                    <a href="#reservations" class="btn btn-primary">Reserve a table</a>
+                    <a href="#menu" class="btn btn-outline">View menu</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+<!-- Menu Section -->
+<section id="menu" class="section section-menu">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-subtitle">Our Specialties</span>
+            <h2 class="section-title">Fine Dining Elevated</h2>
+            <p class="section-description">Our chefs craft each dish with passion and precision, using only the
+                finest ingredients to create memorable dining experiences.</p>
+        </div>
+
+        <div class="menu-categories">
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="indian">Indian Cuisine</button>
+                <button class="tab-btn" data-category="continental">Continental</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+                <button class="tab-btn" data-category="beverages">Beverages</button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Indian Cuisine -->
+                <div class="menu-category active" id="indian">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/9.jpeg" alt="Veg Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Veg Biryani</h3>
+                            <p>Fragrant basmati rice cooked with mixed vegetables, saffron, and aromatic spices in the traditional dum style.</p>
+                            <span class="item-price">₹450</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/12.jpeg" alt="Chana Masala">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chana Masala</h3>
+                            <p>Chickpeas simmered in a rich gravy of onions, tomatoes, and traditional Indian spices.</p>
+                            <span class="item-price">₹350</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/6.jpeg" alt="Bhindi Masala">
+                        </div>
+                        <div class="item-details">
+                            <h3>Bhindi Masala</h3>
+                            <p>Okra stir-fried with onions, tomatoes, and spices for a perfect crispy texture.</p>
+                            <span class="item-price">₹400</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Continental -->
+                <div class="menu-category" id="continental">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/1.jpg" alt="Roasted Vegetables">
+                        </div>
+                        <div class="item-details">
+                            <h3>Roasted Vegetables</h3>
+                            <p>Seasonal vegetables roasted to perfection with olive oil, garlic, and herbs.</p>
+                            <span class="item-price">₹500</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/2.jpg" alt="Margherita Pizza">
+                        </div>
+                        <div class="item-details">
+                            <h3>Margherita Pizza</h3>
+                            <p>Classic pizza with tomato sauce, fresh mozzarella, basil, and olive oil on thin crust.</p>
+                            <span class="item-price">₹600</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/3.jpeg" alt="Cashew Spinach Stew">
+                        </div>
+                        <div class="item-details">
+                            <h3>Cashew Spinach Stew</h3>
+                            <p>Creamy spinach and cannellini bean stew with cashew cream and herbs.</p>
+                            <span class="item-price">₹550</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/7.jpg" alt="Chocolate Lava Cake">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>Warm chocolate cake with molten center, served with vanilla ice cream.</p>
+                            <span class="item-price">₹350</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/8.jpg" alt="Fruit Yogurt Parfait">
+                        </div>
+                        <div class="item-details">
+                            <h3>Fruit Yogurt Parfait</h3>
+                            <p>Layers of granola, fresh fruits, and honey yogurt.</p>
+                            <span class="item-price">₹300</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/11.jpeg" alt="Gulab Jamun">
+                        </div>
+                        <div class="item-details">
+                            <h3>Gulab Jamun</h3>
+                            <p>Traditional Indian sweet dumplings in rose-flavored sugar syrup.</p>
+                            <span class="item-price">₹250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-category" id="beverages">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/drink1.jpg" alt="Mango Lassi">
+                        </div>
+                        <div class="item-details">
+                            <h3>Mango Lassi</h3>
+                            <p>Refreshing yogurt drink with mango pulp and cardamom.</p>
+                            <span class="item-price">₹200</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/drink2.jpg" alt="Masala Chai">
+                        </div>
+                        <div class="item-details">
+                            <h3>Masala Chai</h3>
+                            <p>Spiced Indian tea with milk, ginger, cardamom, and cinnamon.</p>
+                            <span class="item-price">₹150</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <img src="img/drink3.jpg" alt="Fresh Lime Soda">
+                        </div>
+                        <div class="item-details">
+                            <h3>Fresh Lime Soda</h3>
+                            <p>Sparkling soda with fresh lime juice and mint.</p>
+                            <span class="item-price">₹180</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-cta">
+            <a href="#" class="btn btn-primary">View Full Menu</a>
+        </div>
+    </div>
+</section>
+<!-- Move modal outside the section -->
+        <div class="modal-overlay" id="menu-modal">
+            <div class="modal-container">
+                <button class="modal-close" aria-label="Close menu">&times;</button>
+                <h2 class="modal-title">Our Complete Menu</h2>
+                <div class="modal-content">
+                    <!-- Indian Cuisine -->
+                    <div class="modal-menu-category">
+                        <h3>Indian Cuisine</h3>
+                        <div class="modal-menu-items">
+                            <div class="modal-menu-item">
+                                <div class="modal-item-info">
+                                    <h4>Veg Biryani</h4>
+                                    <p>Fragrant basmati rice cooked with mixed vegetables, saffron, and aromatic spices.</p>
+                                </div>
+                                <span class="modal-item-price">₹450</span>
+                            </div>
+                            <!-- Add other items similarly -->
+                        </div>
+                    </div>
+                    <!-- Other categories -->
+                </div>
+            </div>
+        </div>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-experience">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-content">
+                    <span class="section-subtitle">The R.V Difference</span>
+                    <h2 class="section-title">Unparalleled Dining Experience</h2>
+
+                    <div class="experience-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Michelin-Starred Chefs</h3>
+                                <p>Our culinary team brings world-class expertise to every dish.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-wine-glass-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Sommelier Selection</h3>
+                                <p>Perfect wine pairings curated by our expert sommelier.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Seasonal Ingredients</h3>
+                                <p>Locally-sourced, organic produce at the peak of freshness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-image">
+                    <div class="image-container">
+                        <img src="img/chef.jpg" alt="Fine Dining Experience">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section-gallery">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="img/gallery1.jpg" alt="Restaurant Interior">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Elegant Ambiance</h3>
+                        <p>Our sophisticated dining room</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery2.jpg" alt="Chef Preparing Food">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Culinary Artistry</h3>
+                        <p>Our chefs at work</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery3.jpg" alt="Dining Table Setting">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Exquisite Presentation</h3>
+                        <p>Beautifully plated dishes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery4.jpg" alt="Wine Cellar">
+                <div class="gallery-overlay">
+                    <div class="overlay-content">
+                        <h3>Premium Selection</h3>
+                        <p>Our extensive wine collection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="section section-locations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Find Us</span>
+                <h2 class="section-title">Our Locations</h2>
+            </div>
+
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="img/Jodhpur_3.jpeg" alt="Jodhpur Location">
+                    </div>
+                    <div class="location-content">
+                        <h3>Jodhpur</h3>
+                        <div class="location-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Heritage Road, Jodhpur</p>
+                            <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                            <p><i class="fas fa-clock"></i> Mon-Sun: 11AM - 11PM</p>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="img/Hyderabad.jpeg" alt="Hyderabad Location">
+                    </div>
+                    <div class="location-content">
+                        <h3>Hyderabad</h3>
+                        <div class="location-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 456 Pearl Street, Hyderabad</p>
+                            <p><i class="fas fa-phone"></i> +91 987 654 3210</p>
+                            <p><i class="fas fa-clock"></i> Mon-Sun: 11AM - 11PM</p>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="img/jaipur.jpeg" alt="Jaipur Location">
+                    </div>
+                    <div class="location-content">
+                        <h3>Jaipur</h3>
+                        <div class="location-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 789 Pink City Road, Jaipur</p>
+                            <p><i class="fas fa-phone"></i> +91 789 456 1230</p>
+                            <p><i class="fas fa-clock"></i> Mon-Sun: 11AM - 11PM</p>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+                <div class="location-card">
+                    <div class="location-image">
+                        <img src="img/Karnataka.jpeg" alt="Bangalore Location">
+                    </div>
+                    <div class="location-content">
+                        <h3>Bangalore</h3>
+                        <div class="location-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 101 Tech Park, Bangalore</p>
+                            <p><i class="fas fa-phone"></i> +91 654 321 7890</p>
+                            <p><i class="fas fa-clock"></i> Mon-Sun: 11AM - 11PM</p>
+                        </div>
+                        <a href="#" class="btn btn-outline">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Guest Reviews</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+            </div>
+
+            <div class="testimonials-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The tasting menu was exceptional, with each course more surprising
+                            than the last. The wine pairings were perfect, and the service was impeccable."</p>
+                        <div class="testimonial-author">
+                            <img src="img/customer-1.jpg" alt="Alberto Duncan">
+                            <div>
+                                <h4>Alberto Duncan</h4>
+                                <span>Food Critic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Absolutely stunning ambiance and the food was cooked to
+                            perfection. One of the best dining experiences I've had in years."</p>
+                        <div class="testimonial-author">
+                            <img src="img/customer-2.jpg" alt="Priya Sharma">
+                            <div>
+                                <h4>Priya Sharma</h4>
+                                <span>Travel Blogger</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Celebrated our anniversary here and the staff went above and beyond
+                            to make it special. The chocolate lava cake was divine!"</p>
+                        <div class="testimonial-author">
+                            <img src="img/customer-3.jpg" alt="Raj Patel">
+                            <div>
+                                <h4>Raj Patel</h4>
+                                <span>Regular Guest</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="section section-reservations">
+        <div class="container">
+            <div class="reservation-grid">
+                <div class="reservation-image">
+                    <img src="img/reservation.jpeg" alt="Make a Reservation">
+                </div>
+
+                <div class="reservation-form">
+                    <div class="form-header">
+                        <h2>Make a Reservation</h2>
+                        <p>Book your table online or call us at +91 123 456 7890</p>
+                    </div>
+
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Full Name*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date*</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="time">Time*</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Guests*</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5+">5+ People</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occasion">Occasion</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="none">None</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="business">Business</option>
+                                    <option value="celebration">Celebration</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="requests">Special Requests</label>
+                            <textarea id="requests" name="requests" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section section-events">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Upcoming</span>
+                <h2 class="section-title">Special Events</h2>
+            </div>
+
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Wine Tasting Evening</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 6:30 PM - 9:30 PM</p>
+                        <p class="event-description">Join our sommelier for an exclusive wine tasting featuring rare
+                            vintages from our cellar.</p>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Chef's Table Experience</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 7:00 PM - 10:00 PM</p>
+                        <p class="event-description">An intimate dining experience where our head chef prepares a
+                            special menu just for you.</p>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">30</span>
+                        <span class="month">Jun</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Summer Festival</h3>
+                        <p class="event-time"><i class="far fa-clock"></i> 5:00 PM - 11:00 PM</p>
+                        <p class="event-description">Celebrate summer with live music, special cocktails, and seasonal
+                            dishes.</p>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-header">
+                        <h2>Contact Us</h2>
+                        <p>We'd love to hear from you</p>
+                    </div>
+
+                    <div class="info-content">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Heritage Road, Jodhpur, Rajasthan 342001</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 123 456 7890</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>reservations@rvrestaurant.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Monday - Sunday: 11AM - 11PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.123456789012!2d73.01234567890123!3d26.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA3JzI0LjQiTiA3M8KwMDAnNDQuNiJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <video autoplay muted loop playsinline class="footer-video">
+            <source src="video/footer-bg.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+
+        <section class="section section-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Subscribe to receive updates on special events, seasonal menus, and exclusive offers.</p>
+
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="img/logo.png" alt="R.V Restaurant Logo" class="footer-logo">
+                    <p>Where culinary artistry meets timeless elegance since 2010.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#experience">Dining Experience</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#reservations">Reservations</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Heritage Road, Jodhpur</li>
+                        <li><i class="fas fa-phone"></i> +91 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> reservations@rvrestaurant.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Opening Hours</h3>
+                    <ul>
+                        <li>Monday - Sunday</li>
+                        <li>11:00 AM - 11:00 PM</li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="year"></span> R.V Restaurant. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
