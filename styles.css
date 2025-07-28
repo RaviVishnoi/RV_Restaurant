@@ -228,7 +228,7 @@ ul {
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 15px 0;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.053);
 }
 
 .navbar .container {
@@ -269,7 +269,7 @@ ul {
 }
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 300;
     letter-spacing: 1px;
     position: relative;
     padding: 5px 0;
@@ -600,8 +600,8 @@ ul {
     font-size: 22px;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
-    color: var(--color-text);
+    border-bottom: 3px solid #eee;
+    border-color: var(--color-primary);
 }
 
 .modal-menu-items {
